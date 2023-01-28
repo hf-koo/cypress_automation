@@ -16,5 +16,12 @@ describe("My Third test suite", function () {
       //Mocha
       expect(str).to.equal("Hello , Are you sure you want to confirm?");
     });
+
+    //remove target attribute
+    cy.get("#opentab").invoke("removeAttr", "target");
+
+    cy.url().should("include", "rahulshettyacademy");
+
+    cy.go("back");
   });
 });
