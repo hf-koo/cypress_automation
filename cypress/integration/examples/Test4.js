@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 
-describe("My Third test suite", function () {
-  it("My thirdTest case", function () {
+describe("My Forth test suite", function () {
+  it("My forthTest case", function () {
     cy.visit("https://rahulshettyacademy.com/AutomationPractice/");
     cy.get("#alertbtn").click();
     cy.get('[value="Confirm"]').click();

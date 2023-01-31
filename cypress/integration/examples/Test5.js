@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 
-describe("My Forth test suite", function () {
-  it("My forthTest case", function () {
+describe("My Five test suite", function () {
+  it("My fiveTest case", function () {
     cy.visit("https://rahulshettyacademy.com/AutomationPractice/");
 
     // select particular column - search and next column and vertify as well
