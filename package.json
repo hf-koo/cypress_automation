@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run",
+    "headTest": "npm run test --headed",
+    "chromeTest": "npm run test --browser chrome",
+    "recordDashBoardTest": "npm run test --record --key 9824784b-a658-4374-8bbc-5ee616ae1e41 --reporter mochawesome"
   },
-  "author": "",
+  "author": "Jacky",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^12.3.0",

@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
-import HomePage from "../../support/pageObjects/HomePage";
-import ProductPage from "../../support/pageObjects/ProductPage";
-describe("My Second Test Suite", function () {
+import HomePage from "../../integration/pageObjects/HomePage";
+import ProductPage from "../../integration/pageObjects/ProductPage";
+describe("My Eight Test Suite", function () {
   before(function () {
     // runs once before all tests in the block
     cy.fixture("example").then(function (data) {
@@ -9,7 +9,7 @@ describe("My Second Test Suite", function () {
     });
   });
 
-  it("My FirstTest case", function () {
+  it("My eightTest case", function () {
     const homePage = new HomePage();
     const productPage = new ProductPage();
     cy.visit(Cypress.env("url") + "/angularpractice/");
